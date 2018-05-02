@@ -7,7 +7,7 @@ spring:
     index: 0
 
   datasource:
-    url: jdbc:mysql://localhost:3306/account_service
+    url: jdbc:mysql://localhost:3306/account_service0
     username: root
     password: root
     testWhileIdle: true

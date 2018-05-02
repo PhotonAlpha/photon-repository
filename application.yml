@@ -26,7 +26,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
+          brokers: 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9095
           zkNodes: 127.0.0.1:2181
 
 # Discovery Server Access
