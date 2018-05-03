@@ -11,3 +11,5 @@ photon-repository
 -- 5. spring start gateway
 
 -- 6. use RPC backend service communicate
+
+-- 7. start learning netty
