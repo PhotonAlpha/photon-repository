@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306:oc
+    url: jdbc:mysql://localhost:3306:rabbit
     username: root1
     password: root1
     testWhileIdle: false
