@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      failFast: true
+      label: master
+      profile: 
+    stream:
+      kafka:
+        binder:
+          brokers: 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
+          zkNodes: 127.0.0.1:2181
+
+encrypt:
+  failOnError: true
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/  
