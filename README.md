@@ -2,7 +2,8 @@
 
 - [x] intergrate kafka with spring bus
 
-- [ ] spring cloud config password encript
+- [ ] spring cloud config password encrypt
+- [x] jasypt encrypt
 
 - [ ] docker compse with nginx and tomcat and project
 

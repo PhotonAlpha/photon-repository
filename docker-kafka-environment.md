@@ -11,7 +11,7 @@
 7. #### ./kafka_2.11-1.0.0/bin/kafka-console-producer.sh --broker-list localhost:32840 --topic test ``
 8. #### ./kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --bootstrap-server localhost:32840 --from-beginning --topic test `consumer 消费数据`
 
-# -----------explain经过测试目前还不能生效--------------
+# -----------经过测试目前还不能生效--------------
 > Since Kafka 0.9.0 - it has been possible to specify multiple ports for listening on. This is to facilitate support for multiple protocols (i.e. PLAINTEXT,SASL,SSL etc) and separate internal and external traffic. With this change, host.name and port have been deprecated in favour of listeners. advertised.host.name and advertised.port have been deprecated in favour of advertised.listeners.
 
 >Below is the same configuration represented in the deprecated and current formats:
