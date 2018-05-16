@@ -15,3 +15,8 @@
 - [ ] use RPC backend service communicate
 
 - [ ] start learning netty
+
+
+--------------------------
+Quartz JDBC job store: <https://examples.javacodegeeks.com/enterprise-java/quartz/java-quartz-configuration-example/>
+        Tables: https://github.com/quartznet/quartznet/tree/master/database
