@@ -17,6 +17,11 @@
 - [ ] start learning netty
 
 
+--------------------------
+Quartz JDBC job store: <https://examples.javacodegeeks.com/enterprise-java/quartz/java-quartz-configuration-example/>
+        Tables: https://github.com/quartznet/quartznet/tree/master/database
+
+
 
 
 >Your link is working, but you're on separate networks inside of Docker. From the docker-compose.yml docs:
