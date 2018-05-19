@@ -15,3 +15,15 @@
 - [ ] use RPC backend service communicate
 
 - [ ] start learning netty
+
+
+
+
+>Your link is working, but you're on separate networks inside of Docker. From the docker-compose.yml docs:
+>
+>Note: If you’re using the version 2 file format, the externally-created containers must be connected to at least one of the same networks as the service which is linking to them.
+>
+>To solve this, you can create your own network:
+>
+>docker network create dbnet
+>docker network connect dbnet mysql
