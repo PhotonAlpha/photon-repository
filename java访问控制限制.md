@@ -113,6 +113,7 @@
 假如访问的次数超过了限制，将会抛出异常说明访问次数过多
 
 最后在使用控制器的时候加上对应的注解即可
+
         @Controller
         public class testController{
             @RequestMapping("/hello")
