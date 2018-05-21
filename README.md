@@ -34,3 +34,9 @@ Quartz JDBC job store: <https://examples.javacodegeeks.com/enterprise-java/quart
 >
 >docker network create dbnet
 >docker network connect dbnet mysql
+
+
+
+https://github.com/phpsb/book
+https://github.com/cjl3080434008/2014/tree/master/read_book
+https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books-zh.md
