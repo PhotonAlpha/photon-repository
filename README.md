@@ -48,3 +48,39 @@ http://www.baeldung.com/exception-handling-for-rest-with-spring
 
 Jmeter
 https://github.com/qiuchunjoy/jmeter
+
+
+----nginx----
+* 静态web服务器 反向代理服务器
+* nginx -t 检测配置错误
+* nginx -s stop 
+* nginx -s reload 重新加载
+
+        http {
+            server_tokens off;//禁用版本号
+            upstream tomcats {/负载均衡策略
+                server 127.0.0.1:8080;
+                server 127.0.0.1:8080;
+                server 127.0.0.1:8080;
+            }
+            server {
+                listen       80; //端口
+                server_name  a.ttlsa.com; //DNS解析  C:\Windows\System32\drivers\etc\hosts
+                location / { //反向代理 也可以正向代理
+                        proxy_set_header X-Forwarded-Host $host;
+                        proxy_set_header X-Forwarded-Server $host;
+                        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                        proxy_pass http://tomcats;
+                }
+            }
+                //静态网页地址
+            server {
+                server_name b.ttlsa.com c.ttlsa.com;
+                listen 127.0.0.1:80;
+                root data/site/b.ttlsa.com;
+                access_log data/logs/nginx/b.ttlsa.com-access.log main;
+                location / {
+
+                }
+            }
+        }
